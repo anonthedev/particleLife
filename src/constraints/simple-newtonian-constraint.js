@@ -1,6 +1,6 @@
-import { create } from "../utils.js";
+import { create } from "../utils.js"; //import create function to create particles from utils file.
 
-export let particles = [];
+export let simpleNewtonianParticles = [];
 
 function constraints(p1, p2, g) {
   for (let i = 0; i < p1.length; i++) {
@@ -46,14 +46,16 @@ function constraints(p1, p2, g) {
       a.y = Math.max(0, Math.min(a.y, 500));
     }
   }
-}
+} // the constraint.
 
-let red = create(100, "red", particles);
-let yellow = create(60, "yellow", particles);
-let green = create(70, "green", particles);
-let cyan = create(100, "cyan", particles);
 
-export function appliedConstraints() {
+//making particles.
+let red = create(100, "red", simpleNewtonianParticles);
+let yellow = create(60, "yellow", simpleNewtonianParticles);
+let green = create(70, "green", simpleNewtonianParticles);
+let cyan = create(100, "cyan", simpleNewtonianParticles);
+
+export function appliedSimpleNewtonianConstraints() {
   constraints(red, red, -1);
   constraints(yellow, red, -0.3);
   constraints(yellow, green, -0.8);
@@ -63,4 +65,4 @@ export function appliedConstraints() {
   constraints(red, cyan, -0.05);
   constraints(cyan, yellow, -0.5);
   constraints(cyan, cyan, -0.08);
-}
+} //applying the constraint to the particles

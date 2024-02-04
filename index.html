@@ -15,14 +15,19 @@
         /* width: 100vw; */
         background: #121212;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
       }
-      div {
+      .container {
         display: flex;
         flex-direction: column;
         gap: 10px;
+      }
+      .text-data{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
       }
       #fps {
         align-self: flex-end;
@@ -33,8 +38,13 @@
     <script type="module" src="./src/script.js" defer></script>
   </head>
   <body>
-    <div>
-      <p id="fps"></p>
+    <div class="container">
+      <div class="text-data">
+        <select id="list-of-sims">
+            <!-- <option value="" disabled selected>Select Constraint</option> -->
+        </select>
+        <p id="fps"></p>
+      </div>
       <canvas width="500" height="500" id="canvas"></canvas>
     </div>
   </body>

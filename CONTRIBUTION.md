@@ -20,12 +20,15 @@ Before you start contributing, please make sure you have the latest version of t
 
 ### Making new constraints
 
-If you want to make a new constraint
-1. Make a new file in the src/constraints folder with the name of the constraint
+If you want to make a new constraint follow the steps below -
 
-2. build the constraint and export a appliedConstraint function and the particles array.
+1. Make a new file in the src/constraints folder with the name of the constraint. Please name the file and variables nicely and don't put in random names.
 
-3. Add your constraints to the list in the HTML file and link it to the 
+2. build the constraint and export the proper function and particles array.
+
+3. In script.js import the function and particles array and add it to the constraints array same as the Simple Newtonian Constraint is added.
+
+4. Make a PR.
 
 ### Reporting Bugs
 
@@ -34,45 +37,6 @@ If you encounter any bugs or unexpected behavior, please [open an issue](../../i
 ### Suggesting Enhancements
 
 If you have ideas for new features or improvements, feel free to [open an issue](../../issues) with your suggestions. Be clear about the problem or enhancement you're addressing and any relevant context.
-
-
-### Code Contributions
-
-1. Fork the repository.
-
-2. Clone your fork to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/The-Productive-Champion.git
-
-3. Change to the repository directory on your computer (if you are not already there):
-
-   ```
-   cd The-Productive-Champion
-
-4. Create a new branch for your changes:
-
-   ```
-   git checkout -b feature/new-feature
-
-5. Add/Update all the changes:
-
-   ```
-   git add .
-
-6. Make your changes and commit them:
-
-   ```
-   git commit -m "Add new feature"
-
-7. Push your changes to your fork:
-
-    ```
-    git push origin feature/new-feature
-
-8. Open a pull request on the GitHub repository.
-
-9. Your pull request will be reviewed by the maintainers, and any necessary feedback will be provided.
 
 ## License
 
