@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            position: relative;
-            height: 100vh;
-            /* width: 100vw; */
-            background: #121212;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        div{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        #fps{
-            align-self: flex-end;
-            color: white;
-        }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        position: relative;
+        height: 100vh;
+        /* width: 100vw; */
+        background: #121212;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #fps {
+        align-self: flex-end;
+        color: white;
+      }
     </style>
-</head>
-<body>
+    <script type="module" src="./utils.js" defer></script>
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
     <div>
-        <p id="fps"></p>
-        <canvas width="500" height="500" id="canvas"></canvas>
+      <p id="fps"></p>
+      <canvas width="500" height="500" id="canvas"></canvas>
     </div>
-
-    <script type="module" src="script.js"></script>
-</body>
+  </body>
 </html>
