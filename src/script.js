@@ -1,7 +1,7 @@
 import {
   appliedConstraints,
   particles,
-} from "./simple-newtonian-constraint.js";
+} from "./constraints/simple-newtonian-constraint.js";
 
 const canvas = document.getElementById("canvas");
 const fpsEl = document.getElementById("fps");

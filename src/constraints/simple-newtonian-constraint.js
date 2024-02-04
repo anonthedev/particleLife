@@ -1,4 +1,4 @@
-import { create } from "./utils.js";
+import { create } from "../utils.js";
 
 export let particles = [];
 
