@@ -1,5 +1,10 @@
 export function particle(x, y, color) {
-  return { x: x, y: y, vx: 0, vy: 0, color: color };
+  return { x: x, y: y, vx: randomPN(), vy: randomPN(), color: color };
+}
+
+// -1 to 1
+export function randomPN() {
+  return Math.random() - 0.5;
 }
 
 export function random() {

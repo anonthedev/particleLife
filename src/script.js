@@ -1,15 +1,23 @@
 import {
+  boidParticles,
+  boidConstraints,
+} from "./constraints/boid-constraint.js";
+import {
   appliedSimpleNewtonianConstraints,
   simpleNewtonianParticles,
 } from "./constraints/simple-newtonian-constraint.js";
 //import your constraint's applied function and particles.
-
 
 const constraints = [
   {
     name: "Simple Newtonian Constraint",
     func: appliedSimpleNewtonianConstraints,
     particles: simpleNewtonianParticles,
+  },
+  {
+    name: "Boids",
+    func: boidConstraints,
+    particles: boidParticles,
   },
 ]; //add your constraint to this array in the same format as the "Simple Newtonian Constraint" is added. Don't change anything else in script.js if you're adding new constraints.
 
@@ -60,7 +68,7 @@ function update() {
       5
     );
   }
-  requestAnimationFrame(update);
+    requestAnimationFrame(update);
 }
 
 update()
