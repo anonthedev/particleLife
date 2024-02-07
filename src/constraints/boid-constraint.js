@@ -1,7 +1,7 @@
-import { create } from "../utils.js";
+import { createWithVelocity } from "../utils.js";
 
 export const boidParticles = [];
-let boids = create(400, "white", boidParticles);
+let boids = createWithVelocity(400, "white", boidParticles);
 
 function normalize(vector) {
   let [x, y] = vector;
