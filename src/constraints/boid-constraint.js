@@ -1,7 +1,7 @@
-import { createWithVelocity } from "../utils.js";
+import { create, randomPN } from "../utils.js";
 
 export const boidParticles = [];
-let boids = createWithVelocity(400, "white", boidParticles);
+let boids = createWithVelocity(400, "white", boidParticles, randomPN(), randomPN());
 
 function normalize(vector) {
   let [x, y] = vector;
