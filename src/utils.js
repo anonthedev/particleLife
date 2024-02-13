@@ -19,17 +19,3 @@ export function create(number, color, particles, vx = 0, vy = 0) {
   }
   return group;
 }
-
-// Creates group of particles with random initial velocity
-// export function createWithVelocity(number, color, particles) {
-//   let group = [];
-//   for (let i = 0; i < number; i++) {
-//     let p = particle(random(), random(), color);
-//     // Add random velocity to particles
-//     p.vx = randomPN();
-//     p.vy = randomPN();
-//     group.push(p);
-//     particles.push(group[i]);
-//   }
-//   return group;
-// }
