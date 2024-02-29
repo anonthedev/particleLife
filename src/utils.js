@@ -19,3 +19,13 @@ export function create(number, color, particles, vx = 0, vy = 0) {
   }
   return group;
 }
+export function createParticle(x, y, vx, vy, mass, color) {
+  return {
+    x: x,          // X coordinate
+    y: y,          // Y coordinate
+    vx: vx,        // Velocity in the X direction
+    vy: vy,        // Velocity in the Y direction
+    mass: mass,    // Mass of the particle
+    color: color   // Color of the particle
+  };
+}
