@@ -1,4 +1,4 @@
-export function particle(x, y, vx = 0, vy = 0, mass = 1, color) {
+export function particle(x, y, vx = 0, vy = 0, mass = 0, color) {
   return { x: x, y: y, vx: vx, vy: vy, mass: mass, color: color };
 }
 
