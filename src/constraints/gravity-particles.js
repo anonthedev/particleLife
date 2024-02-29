@@ -1,4 +1,4 @@
-import { createParticle } from "../utils.js";
+import { particle } from "../utils.js";
 
 export let gravityParticles = [];
 
@@ -57,7 +57,7 @@ export function initializeGravityParticles(numParticles) {
     const mass = Math.random() * 5 + 1; // Random mass between 1 and 6
     const color = getRandomColor();
 
-    gravityParticles.push(createParticle(x, y, vx, vy, mass, color));
+    gravityParticles.push(particle(x, y, vx, vy, mass, color));
   }
 }
 initializeGravityParticles(100)
