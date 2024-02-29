@@ -8,8 +8,7 @@ import {
 } from "./constraints/simple-newtonian-constraint.js";
 import { 
   applyGravityConstraints, 
-  gravityParticles, 
-  initializeGravityParticles,
+  gravityParticles,
  } from "./constraints/gravity-particles.js";
 //import your constraint's applied function and particles.
 
@@ -80,5 +79,4 @@ function update() {
   }
   requestAnimationFrame(update);
 }
-initializeGravityParticles(300);// setting number of particles
 update();

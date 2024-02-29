@@ -60,7 +60,7 @@ export function initializeGravityParticles(numParticles) {
     gravityParticles.push(createParticle(x, y, vx, vy, mass, color));
   }
 }
-
+initializeGravityParticles(100)
 // Function to generate a random color
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
