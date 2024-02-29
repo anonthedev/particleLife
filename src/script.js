@@ -6,6 +6,10 @@ import {
   appliedSimpleNewtonianConstraints,
   simpleNewtonianParticles,
 } from "./constraints/simple-newtonian-constraint.js";
+import { 
+  applyGravityConstraints, 
+  gravityParticles,
+ } from "./constraints/gravity-particles.js";
 //import your constraint's applied function and particles.
 
 const constraints = [
@@ -18,6 +22,11 @@ const constraints = [
     name: "Boids",
     func: boidConstraints,
     particles: boidParticles,
+  },
+  {
+    name: "Gravity Particles",
+    func: applyGravityConstraints,
+    particles: gravityParticles,
   },
 ]; //add your constraint to this array in the same format as the "Simple Newtonian Constraint" is added. Don't change anything else in script.js if you're adding new constraints.
 
